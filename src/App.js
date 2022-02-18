@@ -1,24 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import IntroCard from "./components/IntroCard";
+import Card from "./components/Card";
 
+const MainWrapper = styled.div`
+  text-align: center;
+  max-width: 1440px;
+`;
+const Wrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+`;
+const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainWrapper>
+      <IntroCard />
+      <Wrapper>
+        <Card
+          borderTopColor="hsl(180, 62%, 55%)"
+          title="  Supervisor"
+          text="Monitors activity to identify project roadblocks"
+          image="/images/icon-supervisor.svg"
+        />
+        <CardWrapper>
+          <Card
+            borderTopColor="hsl(0, 78%, 62%)"
+            title="Team Builder"
+            text="Scans our talent network to create the optimal team for your project"
+            image="/images/icon-team-builder.svg"
+          />
+          <Card
+            borderTopColor="hsl(34, 97%, 64%)"
+            title=" Karma"
+            text="  Regularly evaluates our talent to ensure quality"
+            image="/images/icon-karma.svg"
+          />
+        </CardWrapper>
+        <Card
+          borderTopColor="hsl(212, 86%, 64%)"
+          title="  Calculator"
+          text="Uses data from past projects to provide better delivery estimates"
+          image="/images/icon-calculator.svg"
+        />
+      </Wrapper>
+    </MainWrapper>
   );
 }
 
