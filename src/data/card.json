@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "borderTop": "hsl(180, 62%, 55%)",
+    " title": "Supervisor",
+    "text": "Monitors activity to identify project roadblocks",
+    "image": "/images/icon-supervisor.svg"
+  },
+
+  {
+    "id": 2,
+    "borderTop": "hsl(0, 78%, 62%)",
+    " title": "Team Builder",
+    "text": "Scans our talent network to create the optimal team for your project",
+    "image": "/images/icon-team-builder.svg"
+  },
+
+  {
+    "id": 3,
+    "borderTop": "hsl(34, 97%, 64%)",
+    " title": "Karma",
+    "text": "Regularly evaluates our talent to ensure quality",
+    "image": "/images/icon-karma.svg"
+  },
+
+  {
+    "id": 4,
+    "borderTop": "hsl(212, 86%, 64%)",
+    " title": "Calculator",
+    "text": "Uses data from past projects to provide better delivery estimates",
+    "image": "/images/icon-calculator.svg"
+  }
+]

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import IntroCard from "./components/IntroCard";
+// import cardData from "./data/card.json";
 import Card from "./components/Card";
 
 const MainWrapper = styled.div`
@@ -24,6 +25,17 @@ const CardWrapper = styled.div`
   justify-content: center;
 `;
 function App() {
+  // const card = cardData.map((each) => {
+  //   return(
+  //   <Card
+  //     key={each.id}
+  //     borderTopColor={each.borderTop}
+  //     title={each.title}
+  //     text={each.text}
+  //     image={each.image}
+  //   />);
+  // });
+
   return (
     <MainWrapper>
       <IntroCard />
@@ -34,6 +46,7 @@ function App() {
           text="Monitors activity to identify project roadblocks"
           image="/images/icon-supervisor.svg"
         />
+        {/* {card} */}
         <CardWrapper>
           <Card
             borderTopColor="hsl(0, 78%, 62%)"
