@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 const IntroItem = styled.div`
-  /* text-align: center; */
+  text-align: center;
+  padding: 0em .7em;
+
 `;
 const Title = styled.h1`
   font-weight: 200;
