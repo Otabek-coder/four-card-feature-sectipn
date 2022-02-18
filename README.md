@@ -1,3 +1,4 @@
+![desktop-design](https://user-images.githubusercontent.com/65924250/154772090-9cca5341-54c8-4516-b4f0-4806ce455b6f.jpg)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
